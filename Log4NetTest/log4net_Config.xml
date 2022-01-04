@@ -9,7 +9,7 @@
    </appender>
 
    <appender name="ErrorLog" type="log4net.Appender.RollingFileAppender">
-       <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+       <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\Log\" />-->
 	   <file value="Log\" />
 	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
 	   <datePattern value="yyyy-MM-dd_'ErrorLog.log'" />
@@ -30,7 +30,7 @@
    </appender>
 
    <appender name="InfoLog" type="log4net.Appender.RollingFileAppender">
-	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\Log\" />-->
 	   <file value="Log/" />
 	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
 	   <datePattern value="yyyy-MM-dd_'InfoLog.log'" />
@@ -51,7 +51,7 @@
    </appender>
 
    <appender name="WarnLog" type="log4net.Appender.RollingFileAppender">
-	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\Log\" />-->
 	   <file value="Log/" />
 	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
 	   <datePattern value="yyyy-MM-dd_'WarnLog.log'" />
@@ -72,7 +72,7 @@
    </appender>
 
    <appender name="DebugLog" type="log4net.Appender.RollingFileAppender">
-	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\Log\" />-->
 	   <file value="Log/" />
 	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
 	   <datePattern value="yyyy-MM-dd_'DebugLog.log'" />
@@ -93,7 +93,7 @@
    </appender>
 
    <appender name="FatalLog" type="log4net.Appender.RollingFileAppender">
-	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\Log\" />-->
 	   <file value="Log/" />
 	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
 	   <datePattern value="yyyy-MM-dd_'FatalLog.log'" />
