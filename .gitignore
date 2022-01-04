@@ -1,0 +1,56 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bild/
+[Oo]bj/
+[Llog/
+[Bb]in/
+.vs/
+
+# MSTest test Results
+[Tt]est[Rs]esults*/
+[Bb]uild[Ll]og.*
+
+# NUNIT
+*VisualState.xml
+TestResult.xml
+
+#Build Results of an ATL Project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.cs
+
+*_i.c
+*_p.c
+*_o.h
+*.ilk
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Installshield output folder
+[Ee]xpress/
+
+#Nuget Packages
+
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+/packages
