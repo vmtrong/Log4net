@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This section contains the log4net configuration settings -->
+<log4net>
+   <appender name="Console" type="log4net.Appender.ConsoleAppender">
+       <layout type="log4net.Layout.PatternLayout">
+            Pattern to output the caller's file name and line number 
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+   </appender>
+
+   <appender name="ErrorLog" type="log4net.Appender.RollingFileAppender">
+       <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <file value="Log\" />
+	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
+	   <datePattern value="yyyy-MM-dd_'ErrorLog.log'" />
+	   <appendToFile value="true" />
+	   <rollingStyle value="Composite" />
+	   <maxSizeRollBackups value="10" />
+	   <maximumFileSize value="1MB" />
+	   <staticLogFileName value="false" />
+       <encoding value="utf-8" />
+       <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+       <filter type="log4net.Filter.LevelRangeFilter">
+			  <param name="LevelMin" value="error"/>
+			  <param name="LevelMax" value="error"/>
+			  <param name="AcceptOnMatch" value="true"/>
+		  </filter>
+   </appender>
+
+   <appender name="InfoLog" type="log4net.Appender.RollingFileAppender">
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <file value="Log/" />
+	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
+	   <datePattern value="yyyy-MM-dd_'InfoLog.log'" />
+	   <appendToFile value="true" />
+	   <rollingStyle value="Composite" />
+	   <maxSizeRollBackups value="10" />
+	   <maximumFileSize value="1MB" />
+	   <staticLogFileName value="false" />
+	   <encoding value="utf-8" />
+       <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+       <filter type="log4net.Filter.LevelRangeFilter">
+			  <param name="LevelMin" value="info"/>
+			  <param name="LevelMax" value="info"/>
+			  <param name="AcceptOnMatch" value="true"/>
+		  </filter>
+   </appender>
+
+   <appender name="WarnLog" type="log4net.Appender.RollingFileAppender">
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <file value="Log/" />
+	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
+	   <datePattern value="yyyy-MM-dd_'WarnLog.log'" />
+	   <appendToFile value="true" />
+	   <rollingStyle value="Composite" />
+	   <maxSizeRollBackups value="10" />
+	   <maximumFileSize value="1MB" />
+	   <staticLogFileName value="false" />
+	   <encoding value="utf-8" />
+       <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+       <filter type="log4net.Filter.LevelRangeFilter">
+			  <param name="LevelMin" value="warn"/>
+			  <param name="LevelMax" value="warn"/>
+			  <param name="AcceptOnMatch" value="true"/>
+		  </filter>
+   </appender>
+
+   <appender name="DebugLog" type="log4net.Appender.RollingFileAppender">
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <file value="Log/" />
+	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
+	   <datePattern value="yyyy-MM-dd_'DebugLog.log'" />
+	   <appendToFile value="true" />
+	   <rollingStyle value="Composite" />
+	   <maxSizeRollBackups value="10" />
+	   <maximumFileSize value="1MB" />
+	   <staticLogFileName value="false" />
+	   <encoding value="utf-8" />
+       <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+       <filter type="log4net.Filter.LevelRangeFilter">
+			  <param name="LevelMin" value="debug"/>
+			  <param name="LevelMax" value="debug"/>
+			  <param name="AcceptOnMatch" value="true"/>
+		  </filter>
+   </appender>
+
+   <appender name="FatalLog" type="log4net.Appender.RollingFileAppender">
+	   <!--<file value="C:\Users\${USERNAME}\AppData\Local\Temp\SVPNManager\" />-->
+	   <file value="Log/" />
+	   <lockingModel type="log4net.Appender.FileAppender + MinimalLock" />
+	   <datePattern value="yyyy-MM-dd_'FatalLog.log'" />
+	   <appendToFile value="true" />
+	   <rollingStyle value="Composite" />
+	   <maxSizeRollBackups value="10" />
+	   <maximumFileSize value="1MB" />
+	   <staticLogFileName value="false" />
+	   <encoding value="utf-8" />
+       <layout type="log4net.Layout.PatternLayout">
+           <conversionPattern value="%d [%t] %-5p %c - %m%n" />
+       </layout>
+       <filter type="log4net.Filter.LevelRangeFilter">
+			  <param name="LevelMin" value="fatal"/>
+			  <param name="LevelMax" value="fatal"/>
+			  <param name="AcceptOnMatch" value="true"/>
+		  </filter>
+   </appender>
+
+   <root>
+       <!-- All, Debug, Info, Warning, Error, Fatal, Console, OFF -->
+       <level value="ALL" />
+	   <appender-ref ref="DebugLog" />
+	   <appender-ref ref="InfoLog" />
+	   <appender-ref ref="WarnLog" />
+       <appender-ref ref="ErrorLog" />      
+       <appender-ref ref="FatalLog" />
+       <appender-ref ref="Console" />
+   </root>
+</log4net>
+
