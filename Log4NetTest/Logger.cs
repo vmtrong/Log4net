@@ -46,7 +46,7 @@ namespace Log4NetTest
 						Log4NetContext.AppendLine("   </appender>");
 						Log4NetContext.AppendLine();
 						Log4NetContext.AppendLine("   <appender name=\"ErrorLog\" type=\"log4net.Appender.RollingFileAppender\">");
-						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\SVPNManager\\\" />");
+						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\Log\\\" />");
 						Log4NetContext.AppendLine("       <datePattern value=\"yyyy-MM-dd_'ErrorLog.log'\" />");
 						Log4NetContext.AppendLine("       <staticLogFileName value=\"false\" />");
 						Log4NetContext.AppendLine("       <appendToFile value=\"true\" />");
@@ -66,7 +66,7 @@ namespace Log4NetTest
 						Log4NetContext.AppendLine("   </appender>");
 						Log4NetContext.AppendLine();
 						Log4NetContext.AppendLine("   <appender name=\"InfoLog\" type=\"log4net.Appender.RollingFileAppender\">");
-						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\SVPNManager\\\" />");
+						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\Log\\\" />");
 						Log4NetContext.AppendLine("       <datePattern value=\"yyyy-MM-dd_'InfoLog.log'\" />");
 						Log4NetContext.AppendLine("       <staticLogFileName value=\"false\" />");
 						Log4NetContext.AppendLine("       <appendToFile value=\"true\" />");
@@ -86,7 +86,7 @@ namespace Log4NetTest
 						Log4NetContext.AppendLine("   </appender>");
 						Log4NetContext.AppendLine();
 						Log4NetContext.AppendLine("   <appender name=\"WarnLog\" type=\"log4net.Appender.RollingFileAppender\">");
-						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\SVPNManager\\\" />");
+						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\Log\\\" />");
 						Log4NetContext.AppendLine("       <datePattern value=\"yyyy-MM-dd_'WarnLog.log'\" />");
 						Log4NetContext.AppendLine("       <staticLogFileName value=\"false\" />");
 						Log4NetContext.AppendLine("       <appendToFile value=\"true\" />");
@@ -106,7 +106,7 @@ namespace Log4NetTest
 						Log4NetContext.AppendLine("   </appender>");
 						Log4NetContext.AppendLine();
 						Log4NetContext.AppendLine("   <appender name=\"DebugLog\" type=\"log4net.Appender.RollingFileAppender\">");
-						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\SVPNManager\\\" />");
+						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\Log\\\" />");
 						Log4NetContext.AppendLine("       <datePattern value=\"yyyy-MM-dd_'DebugLog.log'\" />");
 						Log4NetContext.AppendLine("       <staticLogFileName value=\"false\" />");
 						Log4NetContext.AppendLine("       <appendToFile value=\"true\" />");
@@ -126,7 +126,7 @@ namespace Log4NetTest
 						Log4NetContext.AppendLine("   </appender>");
 						Log4NetContext.AppendLine();
 						Log4NetContext.AppendLine("   <appender name=\"FatalLog\" type=\"log4net.Appender.RollingFileAppender\">");
-						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\SVPNManager\\\" />");
+						Log4NetContext.AppendLine("       <file value=\"C:\\Users\\${USERNAME}\\AppData\\Local\\Temp\\Log\\\" />");
 						Log4NetContext.AppendLine("       <datePattern value=\"yyyy-MM-dd_'FatalLog.log'\" />");
 						Log4NetContext.AppendLine("       <staticLogFileName value=\"false\" />");
 						Log4NetContext.AppendLine("       <appendToFile value=\"true\" />");
